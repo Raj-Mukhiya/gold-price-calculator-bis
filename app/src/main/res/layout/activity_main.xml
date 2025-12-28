@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="24K Gold Rate (₹ / 10g)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etCarat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jewellery Carat (e.g. 22)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (grams)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etMaking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Making Charges (%)"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/etGST"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="GST (%)"
+            android:text="3"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculate" />
+
+        <ImageView
+            android:id="@+id/imgHallmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="BIS Hallmark Guide"
+            android:src="@drawable/hallmark_gold" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
